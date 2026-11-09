@@ -166,7 +166,7 @@ const POOL3 = [
   ["نظرت","الفتات|الفتاة","في","المرآت|المرآة","قبل","مواقيت","الدرس"]
 ];
 
-const N1 = 12, N2 = 10, N3 = 5, TOTAL = N1 + N2 + N3;
+const N1 = 22, N2 = 20, N3 = 8, TOTAL = N1 + N2 + N3;
 
 /* ======== الحالة ======== */
 const app = document.getElementById("app");
@@ -220,7 +220,7 @@ function home(){
   '<div class="card"><label>اسمك ولقبك</label><input id="nm" placeholder="مثال: سارة بن علي" value="'+(S.name||"")+'">'+
   '<button class="btn primary" id="go">ابدأ النشاط</button>'+
   '<button class="btn ghost" id="rules">مراجعة القاعدة أولًا</button></div>'+
-  '<p class="muted center">3 مراحل · '+TOTAL+' سؤالًا · يعمل بدون إنترنت</p>';
+  '<p class="muted center">3 مراحل · '+TOTAL+' سؤالًا</p>';
   const nm = document.getElementById("nm");
   document.getElementById("go").onclick = ()=>{
     if(!nm.value.trim()){ nm.focus(); nm.style.borderColor="var(--bad)"; return; }
